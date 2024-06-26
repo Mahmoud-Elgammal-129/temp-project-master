@@ -1,7 +1,7 @@
 <div class="container">
     <header class="header">
       <div class="left-section">
-        <button class="back-button">
+        <button class="back-button"[routerLink]="['/']">
           <i class="fas fa-arrow-left"></i> Back
         </button>
       </div>
@@ -47,7 +47,7 @@
     <footer class="footer">
       <button><i class="fas fa-list"></i></button>
       <button><i class="fas fa-chart-bar"></i></button>
-      <button class="home-button"><i class="fas fa-home"></i></button>
+      <button class="home-button"[routerLink]="['/tasks']"><i class="fas fa-home"></i></button>
       <button><i class="fas fa-trophy"></i></button>
       <button><i class="fas fa-sync-alt"></i></button>
     </footer>
