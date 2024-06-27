@@ -1,1 +1,62 @@
-<p>rewards works!</p>
+<div class="rewards-container">
+    <!-- <header>
+      <h1>City Center Almaza</h1>
+      <div class="points">
+        <span>2500 pts</span>
+        <button>🔔</button>
+      </div>
+    </header> -->
+    <header class="header">
+        <div class="left-section">
+          <button class="back-button">
+            <i class="fas fa-arrow-left"></i> Back
+          </button>
+        </div>
+        <div class="center-section">
+          <img src="assets/citycentre-logo.png" alt="City Centre Almazza" class="logo">
+          <span>City Center Almazza</span>
+        </div>
+        <div class="right-section">
+          <span class="points">2500 pts</span>
+          <i class="fas fa-bell"></i>
+        </div>
+      </header>
+    <section class="rewards-list">
+      <div class="reward-card" *ngFor="let reward of rewards">
+        <img [src]="reward.image" alt="Reward Image">
+        <div class="reward-details">
+          <h3>{{ reward.title }}</h3>
+          <p>Until 31 Dec 2022</p>
+          <p>{{ reward.description }}</p>
+          <p>690 pts</p>
+        </div>
+      </div>
+    </section>
+    <section class="rewards-list">
+        <div class="reward-card" *ngFor="let reward of rewards">
+          <img [src]="reward.image" alt="Reward Image">
+          <div class="reward-details">
+            <h3>{{ reward.title }}</h3>
+            <p>Until 31 Dec 2022</p>
+            <p>{{ reward.description }}</p>
+            <p>690 pts</p>
+          </div>
+        </div>
+      </section>
+      <section class="rewards-list">
+        <div class="reward-card" *ngFor="let reward of rewards">
+          <img [src]="reward.image" alt="Reward Image">
+          <div class="reward-details">
+            <h3>{{ reward.title }}</h3>
+            <p>Until 31 Dec 2022</p>
+            <p>{{ reward.description }}</p>
+            <p>690 pts</p>
+          </div>
+        </div>
+      </section>
+    <nav>
+      <button>🏠</button>
+      <button>🏆</button>
+      <button>🔄</button>
+    </nav>
+  </div>
